@@ -10,22 +10,35 @@
     <style>
         body {
             font-family: 'Playfair Display', serif;
+            background-color: #2b0a0a;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2b0a0a;
+            padding: 1rem;
+            z-index: 1000;
+        }
+        .content {
+            padding-top: 80px;
         }
     </style>
 </head>
-<body class="bg-gradient-to-r from-purple-800 to-blue-500 min-h-screen flex items-center justify-center">
-    <div class="bg-[#2b0a0a] text-white p-12 rounded-lg max-w-6xl mx-auto w-full shadow-2xl">
-        <header class="flex justify-between items-center mb-8">
-            <div class="text-lg font-bold">Nova Marketing</div>
-            <nav class="space-x-8">
-                <a class="hover:underline" href="index.html">Home</a>
-                <a class="hover:underline" href="about.html">About Us</a>
-                <a class="hover:underline" href="services.html">Services</a>
-                <a class="hover:underline" href="portfolio.html">Portfolio</a>
-                <a class="hover:underline" href="testimonials.html">Testimonials</a>
-                <a class="hover:underline" href="contact.html">Contact</a>
-            </nav>
-        </header>
+<body class="min-h-screen flex flex-col items-center justify-center text-white">
+    <header class="navbar flex justify-between items-center">
+        <div class="text-lg font-bold">Nova Marketing</div>
+        <nav class="space-x-8">
+            <a class="hover:underline" href="index.html">Home</a>
+            <a class="hover:underline" href="about.html">About Us</a>
+            <a class="hover:underline" href="services.html">Services</a>
+            <a class="hover:underline" href="portfolio.html">Portfolio</a>
+            <a class="hover:underline" href="testimonials.html">Testimonials</a>
+            <a class="hover:underline" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="content w-full max-w-6xl p-12">
         <main class="text-center">
             <h1 class="text-6xl font-bold mb-4 leading-tight">Our Services</h1>
             <p class="text-xl mb-8">Providing top-notch digital marketing solutions to elevate your brand.</p>
@@ -47,3 +60,5 @@
     </div>
 </body>
 </html>
+
+
