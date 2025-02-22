@@ -10,23 +10,35 @@
     <style>
         body {
             font-family: 'Playfair Display', serif;
-            background-color: #2b0a0a; /* Dark Red Background */
+            background-color: #2b0a0a;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2b0a0a;
+            padding: 1rem;
+            z-index: 1000;
+        }
+        .content {
+            padding-top: 80px;
         }
     </style>
 </head>
 <body class="min-h-screen flex flex-col items-center justify-center text-white">
-    <div class="w-full max-w-6xl p-12">
-        <header class="flex justify-between items-center mb-8">
-            <div class="text-lg font-bold">Nova Marketing</div>
-            <nav class="space-x-8">
-                <a class="hover:underline" href="index.html">Home</a>
-                <a class="hover:underline" href="about.html">About Us</a>
-                <a class="hover:underline" href="services.html">Services</a>
-                <a class="hover:underline" href="portfolio.html">Portfolio</a>
-                <a class="hover:underline" href="testimonials.html">Testimonials</a>
-                <a class="hover:underline" href="contact.html">Contact</a>
-            </nav>
-        </header>
+    <header class="navbar flex justify-between items-center">
+        <div class="text-lg font-bold">Nova Marketing</div>
+        <nav class="space-x-8">
+            <a class="hover:underline" href="index.html">Home</a>
+            <a class="hover:underline" href="about.html">About Us</a>
+            <a class="hover:underline" href="services.html">Services</a>
+            <a class="hover:underline" href="portfolio.html">Portfolio</a>
+            <a class="hover:underline" href="testimonials.html">Testimonials</a>
+            <a class="hover:underline" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="content w-full max-w-6xl p-12">
         <main class="text-center">
             <h1 class="text-6xl font-bold mb-4 leading-tight">Get in Touch</h1>
             <p class="text-xl mb-8">We’d love to hear from you! Reach out to us with any inquiries.</p>
@@ -52,4 +64,3 @@
     </div>
 </body>
 </html>
-
